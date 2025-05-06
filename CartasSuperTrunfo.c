@@ -71,9 +71,26 @@ scanf("%f", &pib2);  // Lê o PIB
 printf("Digite o número de pontos turísticos: ");
 scanf("%d", &numeroPontosTuristicos2);  // Lê o número de pontos turísticos
     
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+   // Impressão dos dados da primeira carta
+printf("\n\nCarta 1\n");
+printf("Estado: %c\n", estado1);  // Mostra o estado
+printf("Código: %c%s\n", estado1, codigoDaCarta1);  // Concatena estado + código
+printf("Nome da cidade: %s", nomeCidade1);  // Mostra o nome da cidade
+printf("População: %d\n", populacao1);  // Mostra a população
+printf("Área: %.2f Km²\n", area1);  // Mostra a área com 2 casas decimais
+printf("PIB: %.2f bilhões de reais\n", pib1);  // Mostra o PIB formatado
+printf("Números de pontos turísticos: %d\n\n", numeroPontosTuristicos1);  // Mostra os pontos turísticos
 
-    return 0;
+// Impressão dos dados da segunda carta
+printf("Carta 2\n");
+printf("Estado: %c\n", estado2);  // Mostra o estado
+printf("Código: %c%s\n", estado2, codigoDaCarta2);  // Concatena estado + código
+printf("Nome da cidade: %s", nomeCidade2);  // Mostra o nome da cidade
+printf("População: %d\n", populacao2);  // Mostra a população
+printf("Área: %.2f Km²\n", area2);  // Mostra a área com 2 casas decimais
+printf("PIB: %.2f bilhões de reais\n", pib2);  // Mostra o PIB formatado
+printf("Números de pontos turísticos: %d\n\n", numeroPontosTuristicos2);  // Mostra os pontos turísticos
+
+return 0;  // Fim do programa
+
 }
