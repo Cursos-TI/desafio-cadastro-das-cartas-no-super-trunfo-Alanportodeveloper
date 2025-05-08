@@ -44,6 +44,16 @@ scanf("%f", &pib1);  // Lê o PIB em float
 printf("Digite o número de pontos turísticos: ");
 scanf("%d", &numeroPontosTuristicos1);  // Lê um número inteiro
 
+// Calcula a densidade populacional dividindo a população pela área.
+// O casting (float) garante que a divisão seja feita com ponto flutuante (casas decimais),
+// mesmo que os operandos sejam inteiros.
+float densidadePopulacional1 = (float)populacao1 / area1; 
+
+// Calcula o PIB per capita dividindo o PIB total pela população.
+// Essa operação indica quanto, em média, cada habitante contribui para o PIB.
+float pibPerCapita1 = pib1 / populacao1;
+
+
 // Indica o início da entrada de dados da segunda carta
 printf("\n\nSegunda carta.\n\n");
 
@@ -70,6 +80,15 @@ scanf("%f", &pib2);  // Lê o PIB
 
 printf("Digite o número de pontos turísticos: ");
 scanf("%d", &numeroPontosTuristicos2);  // Lê o número de pontos turísticos
+
+// Calcula a densidade populacional dividindo a população pela área.
+// O casting (float) garante que a divisão seja feita com ponto flutuante (casas decimais),
+// mesmo que os operandos sejam inteiros.
+float densidadePopulacional2 = (float)populacao2 / area2;
+
+// Calcula o PIB per capita dividindo o PIB total pela população.
+// Essa operação indica quanto, em média, cada habitante contribui para o PIB.
+float pibPerCapita2 = pib2 / populacao2;
     
    // Impressão dos dados da primeira carta
 printf("\n\nCarta 1\n");
@@ -79,7 +98,9 @@ printf("Nome da cidade: %s", nomeCidade1);  // Mostra o nome da cidade
 printf("População: %d\n", populacao1);  // Mostra a população
 printf("Área: %.2f Km²\n", area1);  // Mostra a área com 2 casas decimais
 printf("PIB: %.2f bilhões de reais\n", pib1);  // Mostra o PIB formatado
-printf("Números de pontos turísticos: %d\n\n", numeroPontosTuristicos1);  // Mostra os pontos turísticos
+printf("Números de pontos turísticos: %d\n", numeroPontosTuristicos1);  // Mostra os pontos turísticos
+printf("Densidade populacional: %.2f\n", densidadePopulacional1); // Exibe a densidade populacional formatada com duas casas decimais
+printf("PIB per capita: %.2f\n\n", pibPerCapita1); // Exibe o PIB per capita formatado com duas casas decimais
 
 // Impressão dos dados da segunda carta
 printf("Carta 2\n");
@@ -90,6 +111,8 @@ printf("População: %d\n", populacao2);  // Mostra a população
 printf("Área: %.2f Km²\n", area2);  // Mostra a área com 2 casas decimais
 printf("PIB: %.2f bilhões de reais\n", pib2);  // Mostra o PIB formatado
 printf("Números de pontos turísticos: %d\n\n", numeroPontosTuristicos2);  // Mostra os pontos turísticos
+printf("Densidade populacional: %.2f\n", densidadePopulacional2); // Exibe a densidade populacional formatada com duas casas decimais
+printf("PIB per capita: %.2f\n\n", pibPerCapita2); // Exibe o PIB per capita formatado com duas casas decimais
 
 return 0;  // Fim do programa
 
